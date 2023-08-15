@@ -17,5 +17,5 @@ func CalculateCost(carsCount int) uint {
 	carGroups := uint(carsCount / 10)
 	carIndividually := uint(carsCount % 10)
 
-	return carGroups * 95000 + carIndividually * 10000
+	return carGroups*95000 + carIndividually*10000
 }

@@ -287,7 +287,7 @@ func TestCanFreePrisoner(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.desc, func(t *testing.T) {
 			if got := CanFreePrisoner(tt.knightIsAwake, tt.archerIsAwake, tt.prisonerIsAwake, tt.dogIsPresent); got != tt.expected {
- 				t.Errorf("CanFreePrisoner(%v,%v,%v,%v) = %v; want %v", tt.knightIsAwake, tt.archerIsAwake, tt.prisonerIsAwake, tt.dogIsPresent, got, tt.expected)
+				t.Errorf("CanFreePrisoner(%v,%v,%v,%v) = %v; want %v", tt.knightIsAwake, tt.archerIsAwake, tt.prisonerIsAwake, tt.dogIsPresent, got, tt.expected)
 			}
 		})
 	}
